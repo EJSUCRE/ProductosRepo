@@ -20,8 +20,8 @@ public class Bebida extends Producto {
     @Override
     public double getDescuento() {
         LocalTime now = LocalTime.now();
-        if (now.isAfter(LocalTime.of(17, 0)) && now.isBefore(LocalTime.of(18, 0))) {
-            return this.getPrecio() * 0.2d;
+        if (now.isAfter(LocalTime.of(17, 0))) {
+            return this.getPrecio() * 0.5;
         } else {
             return 0;
         }

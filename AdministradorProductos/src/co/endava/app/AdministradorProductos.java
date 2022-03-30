@@ -24,13 +24,13 @@ public class AdministradorProductos {
     public static void main(String[] args) {
         Producto p1 = new Producto(101, "Café", 1500);
         Producto p2 = new Producto(102, "Azucar", 2500);
-        Comida p3 = new Comida(103, "Pastel", 2000, LocalDate.now().plusDays(2));
+        Comida p3 = new Comida(103, "Pastel", 2000, LocalDate.now().plusDays(0));
         Producto p4 = new Bebida(104, "Té", 1800);
         
-       // System.out.println("Nombre: "+p1.getNombre());
-        //System.out.println("Precio: "+p2.getPrecio());
-        //System.out.println("Fecha: "+ p3.getFechaVencimiento() +  ", Precio: "+ p3.getPrecio() + ", Dcto: " + p3.getDescuento());
-        //System.out.println("Precio: "+ p4.getPrecio() + ", Dcto: " + p4.getDescuento());
+       System.out.println("Nombre: "+p1.getNombre());
+       System.out.println("Precio: "+p2.getPrecio());
+       System.out.println("Fecha: "+ p3.getFechaVencimiento() +  ", Precio: "+ p3.getPrecio() + ", Dcto: " + p3.getDescuento());
+       System.out.println("Precio: "+ p4.getPrecio() + ", Dcto: " + p4.getDescuento());
 
 
         Producto p5 = new Producto(105, "Agua", 1800);
